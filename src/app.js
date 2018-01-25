@@ -9,13 +9,14 @@ class App extends Component {
     state = {loggedIn: null};
 
     componentWillMount () {
+        //COPY THIS FROM YOUR FIREBASE PROJECT AND CHOOSE FOR WEB
         firebase.initializeApp({
-                apiKey: 'AIzaSyBt61NRhzVobDAazE1C5c8N5QMCsW4PPqs',
-                authDomain: 'authentication-b5d96.firebaseapp.com',
-                databaseURL: 'https://authentication-b5d96.firebaseio.com',
-                projectId: 'authentication-b5d96',
-                storageBucket: 'authentication-b5d96.appspot.com',
-                messagingSenderId: '806288083133'
+                apiKey: '[API KEY]',
+                authDomain: '[AUTH DOMAIN]',
+                databaseURL: '[DATABASE URL]',
+                projectId: '[PROJECT ID]',
+                storageBucket: 'STORAGE BUCKET',
+                messagingSenderId: '[MESSAGIN SENDER ID]'
             });
 
         firebase.auth().onAuthStateChanged((user) => {
